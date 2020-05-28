@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin jumbo() {
+   font-weight:bold ;
+  // color:$primaryJumboTextColor;
+   
+  // background: url("/src/assets/pics/entrepreneur-working-on-his-macbook-2-picjumbo-com.jpg");
+//    background-size: 100% 100%;   
+//    background-repeat: no-repeat;
+//    background-size: cover;
+}
