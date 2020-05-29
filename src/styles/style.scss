@@ -3,6 +3,7 @@
 
 #root {
   overflow: hidden;
+}
 
   .cont {
     height: 100vh;
@@ -23,9 +24,7 @@
 
     #main {
       flex: 2;
-      background-color: black;
-      color: white;
       background-color: $primaryBgColor;
     }
   }
-}
+
