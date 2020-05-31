@@ -1,30 +1,113 @@
 @import "./functions.scss";
 @import "./variables.scss";
 
-#root {
-  overflow: hidden;
+body {
+  display: flex;
+  height: relative;
+
+  #root {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    width: 100%;
+  }
 }
 
-  .cont {
-    height: 100vh;
+.cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  #jumbo {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url($backgroundImg) top center no-repeat;
+    background-size: 100% 100%;
+    height: 320px;
+    text-align: center;
 
-    #jumbo {
-      @include jumbo();
+    @media screen and (max-width: 480px) {
+      height: 200px;
+    }
+
+    @media screen and (min-width: 481px max-width 768px) {
+      height: 320px !important;
+    }
+
+    @media screen and (min-width: 1000px) {
+      height: 690px;
+    }
+
+    #logoRow {
       display: flex;
-      flex: 1;
-      overflow: hidden;
+      border-bottom: 1px solid rgb(117, 99, 99);
+      width: 90%;
+      margin: auto;
+      margin-top: unset;
 
-      img {
-        flex: 1;
-        width: 100%;
+      #logo {
+        position: relative;
+        width: 30%;
+        display: flex;
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 270px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
 
-    #main {
-      flex: 2;
-      background-color: $primaryBgColor;
+    #mottoRow {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+
+      #motto {
+        @include jumboText();
+        padding-top: 20px;
+        padding-bottom: 0px;
+        font-size: 5vw;
+        width: 50%;
+        min-width: 290px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: unset;
+        @media screen and (min-width: 360px) and (max-width: 768px) {
+          min-width: 400px;
+        }
+      }
+
+      #mottoCaption {
+        @include jumboText();
+        letter-spacing: 2px;
+        font-weight: unset;
+        font-size: 1.5vw;
+        width: 60%;
+        min-width: 290px;
+        margin: auto;
+        margin-top: 0px
+      }
     }
   }
 
+  #appGoals {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+
+    #goalTitle {
+      display: flex;
+    }
+
+    #goalCaption {
+      display: flex;
+    }
+  }
+}

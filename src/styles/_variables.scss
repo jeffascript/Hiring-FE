@@ -1,3 +1,10 @@
+
+
+//Breaking points
+$breakpoints: (phone: 640px, 
+               tablet: 768px, 
+               desktop: 1024px) !default;
+
 //Background
 $primaryBgColor:#f5f5f5 ; 
 
@@ -7,6 +14,8 @@ $primaryTextColorYellow:#ffce06;
 
 //Jumbotron component
 $primaryJumboTextColor:#ffffff;
+$backgroundImg: "../assets/pics/entrepreneur-working-on-his-macbook-2-picjumbo-com.jpg";
+$jumboText:  "Antipasto", sans-serif;
 
 //card
 $primaryBgCardColor:#ffffff;
