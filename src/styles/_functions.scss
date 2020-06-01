@@ -1,9 +1,18 @@
 //@import './variables';
 
 @mixin jumboText(){
-  font-family: $jumboText;
+  font-family: $primaryTextFont;
   color: white;
   font-weight: bolder;
   line-height: 1.2;
   letter-spacing: 5px;
+}
+
+
+@mixin goalsText(){
+  text-align: center;
+  font-family: $primaryTextFont;
+  color: $primaryTextColor;
+  font-weight: bolder;
+  line-height: 1.2;
 }

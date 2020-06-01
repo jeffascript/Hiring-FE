@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import LandingPage from './components/LandingPage'
+import Main from '../src/components/Main'
 import '../src/styles/style.scss'
 import 'antd/dist/antd.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LandingPage/>
+    <Main/>
   </React.StrictMode>,
   document.getElementById('root')
 );

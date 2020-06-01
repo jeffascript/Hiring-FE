@@ -2,6 +2,8 @@
 @import "./variables.scss";
 @import '../components/Banner/banner';
 @import '../components/Banner/bannerVariables';
+@import '../components/LandingPage/landingPage';
+@import '../components/LandingPage/landingPageVariables';
 
 body {
   display: flex;
@@ -15,26 +17,4 @@ body {
   }
 }
 
-.cont {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
 
-  
-
-  #appGoals {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-
-    #goalTitle {
-      display: flex;
-    }
-
-    #goalCaption {
-      display: flex;
-    }
-  }
-}
