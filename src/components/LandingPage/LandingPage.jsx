@@ -1,68 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Banner from "../Banner/Banner";
-import BlockButton from "../BlockButton/BlockButton";
+import GoalsComponent from "./GoalsComponent";
 
-class LandingPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    let text = "Start  >";
-
+export default () => {
     return (
       <div className="cont">
         <Banner />
-
-        <div id="appGoals">
-          <div id="goalTitle">Lorem ipsum dolor sit amet</div>
-
-          <div id="goalCaption">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
-            quod ab, sunt iusto nihil incidunt cum eligendi
-          </div>
-
-          <div id="goalDepiction">
-            <div className="depictionCols">
-              <img
-                className="depictionImg"
-                src={require("../../assets/pics/filter.png")}
-                alt="filter requirements"
-              ></img>
-              <div className="depictionText">
-                Necessitatibus esse recusandae itaque assumenda
-              </div>
-            </div>
-
-            <div className="depictionCols">
-              <img
-                className="depictionImg"
-                src={require("../../assets/pics/network.png")}
-                alt="networking"
-              ></img>
-              <div className="depictionText">Lorem ipsum dolor sit amet</div>
-            </div>
-
-            <div className="depictionCols">
-              <img
-                className="depictionImg"
-                src={require("../../assets/pics/handshake.png")}
-                alt="partners"
-              ></img>
-              <div className="depictionText">
-                Ipsum aperiam quisquam odit temporibus
-              </div>
-            </div>
-          </div>
-
-          <div id="appGoalsBtn">
-           <BlockButton text={text} />
-          </div>
-        </div>
-
+        <GoalsComponent />
       </div>
     );
-  }
 }
 
-export default LandingPage;
