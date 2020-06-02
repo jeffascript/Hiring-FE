@@ -1,0 +1,111 @@
+// #ratingPartnersCont {
+//   display: flex;
+//   width: auto;
+//   align-items: left;
+
+//   .rpItem {
+//     height: 19em;
+//     position: relative;
+//     @media screen and (max-width: 800px) {
+//       height: 10em;
+//     }
+//   }
+//   #rpItemOne {
+//     position: relative;
+//     display: flex;
+//     flex: 1;
+//     background: $secondaryBgColor;
+//     padding: 20px;
+//     @media screen and (max-width: 800px) {
+//       margin-right: 15%;
+//     }
+
+//     #usersImgCol {
+//       position: relative;
+//       margin-top: 20%;
+//       left: 0;
+//       bottom: 0;
+
+//       #usersImg {
+//         height: 80%;
+//         width: 30%;
+//         margin-left: 5%;
+//       }
+
+//       @media screen and (max-width: 800px) {
+//         height: 50%;
+//         width: 30%;
+//         margin-top: 32%;
+//         margin-right: 40%;
+//       }
+//     }
+//   }
+
+//   #rpItemThree {
+//     position: relative;
+//     flex: 2;
+//     background-image: linear-gradient($tertiaryBgColor, white);
+//     @media screen and (max-width: 400px) {
+//       flex: 1;
+//     }
+//   }
+// }
+
+#ratingPartnersCont {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 40em;
+
+  #rpItemOne {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 6;
+    padding-top: 20%;
+    background: $secondaryBgColor;
+
+    #usersImg {
+      height: 80%;
+      width: 30%;
+    }
+  }
+
+  #rpItemTwo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    grid-row: 1 / span 1;
+    grid-column: 2 / -7;
+    z-index: 3;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+
+    #star {
+      display: flex;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      .starIcon {
+        flex: 1;
+        fill: $primaryTextColorYellow !important;
+        height: 3em;
+        width: auto;
+      }
+    }
+
+    #ratingComment{
+      @include genericText();
+      text-align: center;
+      font-size: 1.8em;
+      padding-top: 20px;
+   
+    }
+  }
+
+  #rpItemThree {
+    grid-row: 1 / span 4;
+    grid-column: 6 / span 8;
+    background-image: linear-gradient($tertiaryBgColor, white);
+  }
+}

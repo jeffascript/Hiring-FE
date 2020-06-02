@@ -21,7 +21,7 @@
     }
 
     #goalTitle {
-      @include goalsText();
+      @include genericText();
       letter-spacing: 2px;
       padding-bottom: 0px;
       font-size: 3vw;
@@ -36,7 +36,7 @@
     }
 
     #goalCaption {
-      @include goalsText();
+      @include genericText();
       letter-spacing: 2px;
       font-size: 1.4vw;
       width: 90%;
@@ -65,7 +65,7 @@
         }
 
         .depictionText {
-          @include goalsText();
+          @include genericText();
           flex: 1;
           height: 20%;
           width: 60%;
@@ -89,7 +89,7 @@
 
         .ant-btn-background-ghost {
           margin: auto;
-          color: white;
+          color: $primaryBgColor;
           background: $primaryTextColorYellow !important;
         }
       }

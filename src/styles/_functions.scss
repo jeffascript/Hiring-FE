@@ -2,17 +2,18 @@
 
 @mixin jumboText(){
   font-family: $primaryTextFont;
-  color: white;
+  color: $primaryBgColor;
   font-weight: bolder;
   line-height: 1.2;
   letter-spacing: 5px;
 }
 
 
-@mixin goalsText(){
+@mixin genericText(){
   text-align: center;
   font-family: $primaryTextFont;
   color: $primaryTextColor;
   font-weight: bolder;
   line-height: 1.2;
 }
+
