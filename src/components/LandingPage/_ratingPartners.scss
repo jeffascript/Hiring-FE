@@ -94,12 +94,11 @@
       }
     }
 
-    #ratingComment{
+    #ratingComment {
       @include genericText();
       text-align: center;
       font-size: 1.8em;
       padding-top: 20px;
-   
     }
   }
 
