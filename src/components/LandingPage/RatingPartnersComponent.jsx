@@ -1,7 +1,6 @@
 import React from "react";
-import { Icon } from "evergreen-ui";
 import usersImg from "../../assets/pics/users.png";
-import TestBox from "../TestBox";
+import msLogoImg from "../../assets/pics/microsoft.png"
 
 export default () => {
   // return (<TestBox />)
@@ -12,10 +11,6 @@ export default () => {
         <div id="rpItemTwo">
           <div id="ratingBox">
             <div id="star">
-              {/* <Icon className="starIcon" icon="star" />
-              <Icon className="starIcon" icon="star" />
-              <Icon className="starIcon" icon="star" />
-              <Icon className="starIcon" icon="star" /> */}
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
@@ -23,7 +18,6 @@ export default () => {
               <span className="material-icons">
                 star_half
               </span>
-              {/* <Icon className="starIcon"  icon="star" /> */}
             </div>
 
             <div id="commentText">
@@ -44,6 +38,10 @@ export default () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
           quod ab, sunt iusto nihil incidunt cum eligendi
         </div>
+
+        <div id="logoImgCol">
+    
+          </div>
       </div>
     </div>
   );

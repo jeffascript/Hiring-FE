@@ -23,6 +23,9 @@
       z-index: 3;
       flex-basis: 90%;
       white-space: nowrap;
+      @media screen and (max-width: 500px) {
+        margin-right: -10px;
+      }
 
       #ratingBox {
         background: white;
@@ -35,7 +38,6 @@
           display: flex;
           flex: 1;
           justify-content: space-evenly;
-          // margin: auto;
           text-align: center;
 
           span {
@@ -96,6 +98,7 @@
     flex-direction: column;
     background-image: linear-gradient($tertiaryBgColor, white);
     padding: 4% 4% 4% 4%;
+    width: 45%;
 
     #rpTitle {
       @include genericText();
@@ -111,5 +114,12 @@
       font-size: 1.4vw;
       text-align: unset;
     }
+
+    // #logoImgCol{
+    //   padding-top: 4%;
+    //   padding-right: 4%;
+    //   display: flex;
+                
+    // }
   }
 }
