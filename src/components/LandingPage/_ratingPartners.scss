@@ -1,110 +1,122 @@
-// #ratingPartnersCont {
-//   display: flex;
-//   width: auto;
-//   align-items: left;
-
-//   .rpItem {
-//     height: 19em;
-//     position: relative;
-//     @media screen and (max-width: 800px) {
-//       height: 10em;
-//     }
-//   }
-//   #rpItemOne {
-//     position: relative;
-//     display: flex;
-//     flex: 1;
-//     background: $secondaryBgColor;
-//     padding: 20px;
-//     @media screen and (max-width: 800px) {
-//       margin-right: 15%;
-//     }
-
-//     #usersImgCol {
-//       position: relative;
-//       margin-top: 20%;
-//       left: 0;
-//       bottom: 0;
-
-//       #usersImg {
-//         height: 80%;
-//         width: 30%;
-//         margin-left: 5%;
-//       }
-
-//       @media screen and (max-width: 800px) {
-//         height: 50%;
-//         width: 30%;
-//         margin-top: 32%;
-//         margin-right: 40%;
-//       }
-//     }
-//   }
-
-//   #rpItemThree {
-//     position: relative;
-//     flex: 2;
-//     background-image: linear-gradient($tertiaryBgColor, white);
-//     @media screen and (max-width: 400px) {
-//       flex: 1;
-//     }
-//   }
-// }
-
 #ratingPartnersCont {
-  display: grid;
+  display: flex;
   position: relative;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  height: 40em;
 
   #rpItemOne {
-    grid-row: 1 / span 4;
-    grid-column: 1 / span 6;
-    padding-top: 20%;
-    background: $secondaryBgColor;
-
-    #usersImg {
-      height: 80%;
-      width: 30%;
-    }
-  }
-
-  #rpItemTwo {
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    grid-row: 1 / span 1;
-    grid-column: 2 / -7;
-    z-index: 3;
-    background: white;
-    border-radius: 8px;
-    padding: 30px;
+    background: $secondaryBgColor;
+    height: fit-content;
+    height: 100%;
+    padding-bottom: 1%;
 
-    #star {
+    #rpItemNone {
+      flex: 1;
+      width: 50%;
+    }
+    #rpItemTwo {
+      padding-top: 2%;
+      padding-left: 10%;
       display: flex;
-      padding-left: 40px;
-      padding-right: 40px;
+      flex-direction: column;
+      margin-right: -15px;
+      z-index: 3;
+      flex-basis: 90%;
+      white-space: nowrap;
 
-      .starIcon {
-        flex: 1;
-        fill: $primaryTextColorYellow !important;
-        height: 3em;
-        width: auto;
+      #ratingBox {
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        padding: 3% 7% 3% 7%;
+
+        #star {
+          display: flex;
+          flex: 1;
+          justify-content: space-evenly;
+          margin: auto;
+
+          .starIcon {
+            fill: $primaryTextColorYellow !important;
+            width: 12%;
+            height: 12%;
+
+            @media screen and (min-width: 1000px) {
+              width: 10%;
+              height: 10%;
+            }
+
+            @media screen and (min-width: 400px) and (max-width: 800px) {
+              width: 10%;
+              height: 10%;
+            }
+          }
+        }
+
+        #commentText {
+          display: flex;
+          @include genericText();
+          justify-content: center;
+          font-size: 2vh;
+          padding-top: 2%;
+
+          @media screen and (min-width: 1000px) {
+            padding-top: 5%;
+            font-size: 4vh;
+          }
+
+          @media screen and (min-width: 400px) and (max-width: 800px) {
+            padding-top: 5%;
+            font-size: 2vh;
+          }
+        }
       }
     }
 
-    #ratingComment {
-      @include genericText();
-      text-align: center;
-      font-size: 1.8em;
-      padding-top: 20px;
+    #triangle {
+      flex: 1;
+      background-color: $secondaryBgColor;
+      border-top: 1em solid white;
+      border-left: 1em solid $secondaryBgColor;
+      border-bottom: 1em solid $secondaryBgColor;
+      border-right: 1em solid $secondaryBgColor;
+      width: 0px;
+      margin: auto;
+    }
+
+    #usersImgCol {
+      flex: 1;
+      display: flex;
+
+      #usersImg {
+        margin: 0 auto;
+        height: auto;
+        width: 40%;
+      }
     }
   }
 
   #rpItemThree {
-    grid-row: 1 / span 4;
-    grid-column: 6 / span 8;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient($tertiaryBgColor, white);
+    padding: 4% 4% 4% 4%;
+
+    #rpTitle {
+      @include genericText();
+      letter-spacing: 2px;
+      font-size: 3vw;
+      min-width: 290px;
+      text-align: unset;
+    }
+
+    #rpCaption {
+      @include genericText();
+      letter-spacing: 2px;
+      font-size: 1.4vw;
+      text-align: unset;
+    }
   }
 }

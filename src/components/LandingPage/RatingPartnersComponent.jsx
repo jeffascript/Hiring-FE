@@ -1,31 +1,43 @@
 import React from "react";
 import { Icon } from "evergreen-ui";
+import usersImg from "../../assets/pics/users.png";
+import TestBox from "../TestBox";
 
 export default () => {
+  // return (<TestBox />)
   return (
     <div id="ratingPartnersCont">
-      <div className="rpItem" id="rpItemOne">
-        <div id="usersImgCol">
-          <img
-            id="usersImg"
-            src={require("../../assets/pics/users.png")}
-            alt="users"
-          ></img>
+      <div id="rpItemOne">
+        <div id="rpItemNone"></div>
+        <div id="rpItemTwo">
+          <div id="ratingBox">
+            <div id="star">
+              <Icon className="starIcon" icon="star" />
+              <Icon className="starIcon" icon="star" />
+              <Icon className="starIcon" icon="star" />
+              <Icon className="starIcon" icon="star" />
+              <Icon className="starIcon" id="lastStar" icon="star" />
+            </div>
+
+            <div id="commentText">
+              <b>4.7</b> customer satisfaction
+            </div>
+          </div>
+          <div id="triangle"></div>
+          <div id="usersImgCol">
+            <img id="usersImg" src={usersImg} alt="users"></img>
+          </div>
         </div>
       </div>
-      <div className="rpItem" id="rpItemTwo">
-        <div id="star">
-          <Icon className="starIcon" icon="star" />
-          <Icon className="starIcon" icon="star" />
-          <Icon className="starIcon" icon="star" />
-          <Icon className="starIcon" icon="star" />
-          <Icon className="starIcon" id="lastStar" icon="star" />
-        </div>
-        <div id="ratingComment">
-         <b>4.7</b>  customer satisfaction
+
+      <div id="rpItemThree">
+        <div id="rpTitle">Lorem ipsum dolor sit amet</div>
+
+        <div id="rpCaption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
+          quod ab, sunt iusto nihil incidunt cum eligendi
         </div>
       </div>
-      <div className="rpItem" id="rpItemThree"></div>
     </div>
   );
 };
