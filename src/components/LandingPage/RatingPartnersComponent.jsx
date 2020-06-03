@@ -1,9 +1,7 @@
 import React from "react";
 import usersImg from "../../assets/pics/users.png";
-import msLogoImg from "../../assets/pics/microsoft.png"
 
 export default () => {
-  // return (<TestBox />)
   return (
     <div id="ratingPartnersCont">
       <div id="rpItemOne">
