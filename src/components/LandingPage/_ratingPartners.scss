@@ -35,21 +35,14 @@
           display: flex;
           flex: 1;
           justify-content: space-evenly;
-          margin: auto;
+          // margin: auto;
+          text-align: center;
 
-          .starIcon {
-            fill: $primaryTextColorYellow !important;
-            width: 12%;
-            height: 12%;
+          span {
+            color: $primaryTextColorYellow;
 
             @media screen and (min-width: 1000px) {
-              width: 10%;
-              height: 10%;
-            }
-
-            @media screen and (min-width: 400px) and (max-width: 800px) {
-              width: 10%;
-              height: 10%;
+              font-size: 3em;
             }
           }
         }

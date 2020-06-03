@@ -12,11 +12,18 @@ export default () => {
         <div id="rpItemTwo">
           <div id="ratingBox">
             <div id="star">
+              {/* <Icon className="starIcon" icon="star" />
               <Icon className="starIcon" icon="star" />
               <Icon className="starIcon" icon="star" />
-              <Icon className="starIcon" icon="star" />
-              <Icon className="starIcon" icon="star" />
-              <Icon className="starIcon" id="lastStar" icon="star" />
+              <Icon className="starIcon" icon="star" /> */}
+              <span className="material-icons">star</span>
+              <span className="material-icons">star</span>
+              <span className="material-icons">star</span>
+              <span className="material-icons">star</span>
+              <span className="material-icons">
+                star_half
+              </span>
+              {/* <Icon className="starIcon"  icon="star" /> */}
             </div>
 
             <div id="commentText">
