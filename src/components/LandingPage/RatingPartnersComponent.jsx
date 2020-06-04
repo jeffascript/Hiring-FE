@@ -3,9 +3,12 @@ import usersImg from "../../assets/pics/users.png";
 import msLogo from "../../assets/pics/msWhite.png";
 import allLogo from "../../assets/pics/allianz.png";
 import bmwLogo from "../../assets/pics/bmw.png";
+import BlockButton from "../BlockButton/BlockButton";
 
 export default () => {
+  const text = "Read more";
   return (
+    <div id="ratingPartnersWholeCont">
     <div id="ratingPartnersCont">
       <div id="rpItemOne">
         <div id="rpItemNone"></div>
@@ -49,6 +52,11 @@ export default () => {
             <img id="bmwLogo" src={bmwLogo} alt="Allianz"></img>
           </div>
         </div>
+      </div>
+
+    </div>
+    <div id="readMoreBtn">
+        <BlockButton text={text} />
       </div>
     </div>
   );

@@ -7,15 +7,11 @@ class Accordian extends Component {
 
   render() {
     const data = [
-      
-        "How much does it cost lorem ipsum?",
-      
-      
+      "How much does it cost lorem ipsum?",
+
       "lorem ipsum dolor sit amet, consectetur adipisci?",
-      
-      
+
       "Tempor incidunt ut labore et dolore?",
-      
     ];
 
     const opened = this.state.opened;
@@ -35,9 +31,10 @@ class Accordian extends Component {
               return (
                 <li {...{ className: "accordion-list__item" }}>
                   <div {...{ className: "accordion-item__line" }}>
-                  <span {...{ className: "accordion-item__icon" }} />
-                    <h3 {...{ className: "accordion-item__title" }}>{title} </h3>
-                  
+                    <span {...{ className: "accordion-item__icon" }} />
+                    <h3 {...{ className: "accordion-item__title" }}>
+                      {title}{" "}
+                    </h3>
                   </div>
                   <div {...{ className: "accordion-item__inner" }}>
                     <div {...{ className: "accordion-item__content" }}>

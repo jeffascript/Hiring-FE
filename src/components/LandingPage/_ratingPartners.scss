@@ -1,198 +1,228 @@
-#ratingPartnersCont {
+#ratingPartnersWholeCont {
   display: flex;
-  position: relative;
+  justify-content: center;
+  contain: content;
 
-  @media screen and (max-width: 500px) {
-    height: 9rem;
-  }
-
-  #rpItemOne {
-    flex: 1;
+  #ratingPartnersCont {
     display: flex;
-    background: $secondaryBgColor;
-    height: fit-content;
-    padding-bottom: 1%;
-    height: 100%;
+    position: relative;
 
-    #rpItemNone {
-      flex: 1;
-      width: 50%;
+    @media screen and (max-width: 500px) {
+      height: 10rem;
     }
-    #rpItemTwo {
-      padding-top: 10%;
-      padding-left: 10%;
+
+    @media screen and (min-width: 501px) and (max-width: 800px) {
+      height: 14rem;
+    }
+
+    #rpItemOne {
+      flex: 1;
       display: flex;
-      flex-direction: column;
-      margin-right: -15px;
-      z-index: 3;
-      flex-basis: 90%;
-      white-space: nowrap;
-      @media screen and (max-width: 500px) {
-        margin-right: -10px;
+      background: $secondaryBgColor;
+      height: fit-content;
+      padding-bottom: 1%;
+      height: 100%;
+
+      #rpItemNone {
+        flex: 1;
+        width: 50%;
       }
+      #rpItemTwo {
+        padding-top: 10%;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        margin-right: -15px;
+        z-index: 3;
+        flex-basis: 90%;
+        white-space: nowrap;
+        @media screen and (max-width: 500px) {
+          margin-right: -8px;
+        }
 
-      #ratingBox {
-        background: $primaryBgColor;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 5px;
-        padding: 3% 7% 5% 7%;
+        #ratingBox {
+          background: $primaryBgColor;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border-radius: 5px;
+          padding: 3% 7% 5% 7%;
+          @media screen and (max-width: 590px) {
+            width: 9em;
+          }
+          #star {
+            display: flex;
+            flex: 1;
+            justify-content: space-evenly;
+            text-align: center;
 
-        #star {
-          display: flex;
-          flex: 1;
-          justify-content: space-evenly;
-          text-align: center;
+            span {
+              color: $primaryTextColorYellow;
 
-          span {
-            color: $primaryTextColorYellow;
+              @media screen and (min-width: 1000px) {
+                font-size: 3em;
+              }
+            }
+          }
+
+          #commentText {
+            display: flex;
+            @include genericText();
+            justify-content: center;
+            font-size: 2vh;
+            padding-top: 2%;
 
             @media screen and (min-width: 1000px) {
-              font-size: 3em;
+              padding-top: 5%;
+              font-size: 4vh;
+            }
+            @media screen and (min-width: 0px) and (max-width: 590px) {
+              padding-top: 5%;
+              font-size: 1.2vh;
+            }
+            @media screen and (min-width: 591px) and (max-width: 800px) {
+              padding-top: 5%;
+              font-size: 2vh;
+            }
+          }
+        }
+      }
+
+      #triangle {
+        flex: 1;
+        border-top: 1em solid white;
+        border-left: 1em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-right: 1em solid transparent;
+        width: 0px;
+        margin: auto;
+        margin-top: -2px;
+
+        @media screen and (max-width: 500px) {
+          border-top: 0.7em solid white;
+          border-left: 0.7em solid transparent;
+          border-bottom: 0.7em solid transparent;
+          border-right: 0.7em solid transparent;
+          margin-top: -2px;
+        }
+      }
+
+      #usersImgCol {
+        flex: 1;
+        display: flex;
+        padding-top: 4%;
+
+        #usersImg {
+          margin: 0 auto;
+          height: auto;
+          width: 40%;
+        }
+      }
+    }
+
+    #rpItemThree {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient($tertiaryBgColor, #fafafa);
+      padding: 4% 4% 2% 4%;
+      width: 1vw;
+      height: 100%;
+
+      #rpTitle {
+        @include genericText();
+        letter-spacing: 2px;
+        font-size: 3vw;
+        min-width: 290px;
+        text-align: unset;
+      }
+
+      #rpCaption {
+        @include genericText();
+        letter-spacing: 2px;
+        font-size: 1.4vw;
+        text-align: unset;
+      }
+
+      #logoImgCol {
+        display: flex;
+        contain: content;
+        justify-content: flex-start;
+
+        #logoFirstCol {
+          display: flex;
+          padding-right: 7%;
+          padding-top: 4%;
+
+          #allLogo {
+            flex: 1;
+            height: 3.5vh;
+            width: auto;
+            filter: drop-shadow(3px 3px 3px grey);
+
+            @media screen and (max-width: 400px) {
+              height: 2vh;
+              width: auto;
             }
           }
         }
 
-        #commentText {
+        #logoSecondCol {
+          padding-top: 4%;
           display: flex;
-          @include genericText();
-          justify-content: center;
-          font-size: 2vh;
-          padding-top: 2%;
+          padding-right: 7%;
 
-          @media screen and (min-width: 1000px) {
-            padding-top: 5%;
-            font-size: 4vh;
-          }
-
-          @media screen and (min-width: 400px) and (max-width: 800px) {
-            padding-top: 5%;
-            font-size: 2vh;
+          #msLogo {
+            flex: 1;
+            height: 3.5vh;
+            width: auto;
+            filter: drop-shadow(3px 3px 3px grey);
+            @media screen and (max-width: 400px) {
+              height: 2vh;
+              width: auto;
+            }
           }
         }
-      }
-    }
 
-    #triangle {
-      flex: 1;
-      border-top: 1em solid white;
-      border-left: 1em solid transparent;
-      border-bottom: 1em solid transparent;
-      border-right: 1em solid transparent;
-      width: 0px;
-      margin: auto;
-      margin-top: -2px;
+        #logoThirdCol {
+          display: flex;
+          padding-bottom: 2%;
+          padding-top: 3%;
 
-      @media screen and (max-width: 500px) {
-        border-top: 0.7em solid white;
-        border-left: 0.7em solid transparent;
-        border-bottom: 0.7em solid transparent;
-        border-right: 0.7em solid transparent;
-        margin-top: -2px;
-      }
-    }
+          @media screen and (min-width: 401px) and (max-width: 938px) {
+            padding-top: 2%;
+          }
 
-    #usersImgCol {
-      flex: 1;
-      display: flex;
-      padding-top: 4%;
+          #bmwLogo {
+            flex: 1;
+            height: 4.7vh;
+            width: auto;
+            filter: drop-shadow(3px 3px 3px grey);
+            @media screen and (max-width: 400px) {
+              height: 2.5vh;
+              width: auto;
+            }
 
-      #usersImg {
-        margin: 0 auto;
-        height: auto;
-        width: 40%;
+            @media screen and (min-width: 401px) and (max-width: 1000px) {
+              height: 4.7vh;
+              width: auto;
+            }
+          }
+        }
       }
     }
   }
+  #readMoreBtn {
+    position: absolute;
+    bottom: 1.5em;
+    background: transparent;
 
-  #rpItemThree {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient($tertiaryBgColor, #fafafa);
-    padding: 4% 4% 4% 4%;
-    width: 100%;
-    height: 100%;
-
-    #rpTitle {
-      @include genericText();
-      letter-spacing: 2px;
-      font-size: 3vw;
-      min-width: 290px;
-      text-align: unset;
-    }
-
-    #rpCaption {
-      @include genericText();
-      letter-spacing: 2px;
-      font-size: 1.4vw;
-      text-align: unset;
-    }
-
-    #logoImgCol {
+    .site-button-ghost-wrapper {
       display: flex;
-      contain: content;
-      justify-content: flex-start;
 
-      #logoFirstCol {
-        display: flex;
-        padding-right: 7%;
-        padding-top: 4%;
-
-        #allLogo {
-          flex: 1;
-          height: 3.5vh;
-          width: auto;
-          filter: drop-shadow(3px 3px 3px grey);
-
-          @media screen and (max-width: 400px) {
-            height: 2vh;
-            width: auto;
-          }
-        }
-      }
-
-      #logoSecondCol {
-        padding-top: 4%;
-        display: flex;
-        padding-right: 7%;
-
-        #msLogo {
-          flex: 1;
-          height: 3.5vh;
-          width: auto;
-          filter: drop-shadow(3px 3px 3px grey);
-          @media screen and (max-width: 400px) {
-            height: 2vh;
-            width: auto;
-          }
-        }
-      }
-
-      #logoThirdCol {
-        display: flex;
-        padding-bottom: 2%;
-        padding-top: 3%;
-
-        @media screen and (min-width: 401px) and (max-width: 938px) {
-          padding-top: 2%;
-        }
-
-        #bmwLogo {
-          flex: 1;
-          height: 4.7vh;
-          width: auto;
-          filter: drop-shadow(3px 3px 3px grey);
-          @media screen and (max-width: 400px) {
-            height: 2.5vh;
-            width: auto;
-          }
-
-          @media screen and (min-width: 401px) and (max-width: 1000px) {
-            height: 4.7vh;
-            width: auto;
-          }
-        }
+      .ant-btn-background-ghost {
+        margin: auto;
+        color: $primaryTextColorYellow;
+        background: $secondaryBgColor!important;
       }
     }
   }
