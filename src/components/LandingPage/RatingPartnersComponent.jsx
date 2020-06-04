@@ -1,5 +1,8 @@
 import React from "react";
 import usersImg from "../../assets/pics/users.png";
+import msLogo from "../../assets/pics/msWhite.png";
+import allLogo from "../../assets/pics/allianz.png";
+import bmwLogo from "../../assets/pics/bmw.png";
 
 export default () => {
   return (
@@ -13,9 +16,7 @@ export default () => {
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
-              <span className="material-icons">
-                star_half
-              </span>
+              <span className="material-icons">star_half</span>
             </div>
 
             <div id="commentText">
@@ -38,8 +39,16 @@ export default () => {
         </div>
 
         <div id="logoImgCol">
-    
+          <div id="logoFirstCol">
+            <img id="allLogo" src={allLogo} alt="Allianz"></img>
           </div>
+          <div id="logoSecondCol">
+            <img id="msLogo" src={msLogo} alt="Microsoft Logo"></img>
+          </div>
+          <div id="logoThirdCol">
+            <img id="bmwLogo" src={bmwLogo} alt="Allianz"></img>
+          </div>
+        </div>
       </div>
     </div>
   );
