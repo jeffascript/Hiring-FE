@@ -1,3 +1,9 @@
 .divCard{
     padding:4em;
 }
+
+.ant-card-bordered{
+    border-left: 10px solid red !important;
+    border-radius: 1em !important;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2)
+}
