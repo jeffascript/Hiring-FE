@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Main from '../src/components/Main'
 import '../src/styles/style.scss'
 import 'antd/dist/antd.css';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import configureStore from "./store";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={configureStore()}>
+  {/* <React.StrictMode> */}
     <Main/>
-  </React.StrictMode>,
+  {/* </React.StrictMode> */}
+  </Provider>,
   document.getElementById('root')
 );
 
