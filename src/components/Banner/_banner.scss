@@ -1,93 +1,50 @@
 @import "../Banner/bannerVariables";
 
 #jumbo {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url($backgroundImg) top center no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-    padding-bottom: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url($backgroundImg) top center no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 0 8% 4% 8% !important;
 
-    @media screen and (max-width: 400px) {
-      height: 15em;
-    }
-    @media screen and (min-width: 401px) and (max-width: 767px) {
-      height: 22em;
-    }
+  #logoRow {
+    border-bottom: 1px solid rgb(117, 99, 99);
 
-    @media screen and (min-width: 769px) and (max-width: 999px) {
-      height: 30em;
-    }
+    #logo {
+      padding-top: 4%;
+      padding-bottom: 2%;
 
-    @media screen and (min-width: 1000px) {
-      height: 35em;
-    }
-
-    @media screen and (min-width: 1300px) {
-      height: 40em;
-    }
-
-    @media screen and (min-width: 1420px) {
-      height: 45em;
-    }
-
-    @media screen and (min-width: 1536px) {
-      height: 50em;
-    }
-
-    #logoRow {
-      display: flex;
-      border-bottom: 1px solid rgb(117, 99, 99);
-      width: 90%;
-      margin: auto;
-      margin-top: unset;
-
-      #logo {
-        width: 20%;
-        display: flex;
-        padding-right: 4%;
-        padding-top: 4%;
-        padding-bottom: 2%;
-        min-width: 25%;
-
-
-        img {
-          height: 100%;
-          width: 100%;
-        }
+      img {
+        min-width: 70px;
+        min-height: auto;
+        width: 15vw;
+        height: auto;
       }
     }
-
-    #mottoRow {
-      height: 70%;
-      display: flex;
-      flex-direction: column;
-
-      #motto {
-        @include jumboText();
-        padding-top: 20px;
-        padding-bottom: 0px;
-        font-size: 5vw;
-        width: 50%;
-        min-width: 290px;
-        margin: auto;
-        margin-bottom: 10px;
-        margin-top: unset;
-        @media screen and (min-width: 360px) and (max-width: 768px) {
-          min-width: 400px;
-        }
-      }
-
-      #mottoCaption {
-        @include jumboText();
-        letter-spacing: 2px;
-        font-weight: unset;
-        font-size: 1.5vw;
-        width: 60%;
-        min-width: 290px;
-        margin: 0 auto;
-      }
-    }
-
   }
+
+
+    #motto {
+      @include jumboText();
+      padding: 4% 0 2% 0;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #mottoCaption {
+      @include captionText();
+      color: white;
+      padding-bottom: 2%;
+      font-weight: unset;
+      max-width: 550px;
+      margin: 0 auto;
+      @media screen and (max-width: 400px) {
+        font-size: 3vw;
+      }
+    }
+
+
+  #getStartedBtn {
+    margin: auto;
+  }
+}

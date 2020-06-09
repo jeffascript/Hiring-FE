@@ -3,61 +3,68 @@ import usersImg from "../../assets/pics/users.png";
 import msLogo from "../../assets/pics/msWhite.png";
 import allLogo from "../../assets/pics/allianz.png";
 import bmwLogo from "../../assets/pics/bmw.png";
+import {Container, Row, Col} from "react-bootstrap"
 import BlockButton from "../BlockButton/BlockButton";
 
 export default () => {
   const text = "Read more";
+
   return (
-    <div id="ratingPartnersWholeCont">
-    <div id="ratingPartnersCont">
-      <div id="rpItemOne">
-        <div id="rpItemNone"></div>
-        <div id="rpItemTwo">
-          <div id="ratingBox">
-            <div id="star">
+    <>
+    <Container fluid  id="ratingPartnersCont">
+      <Row m-0 id="overlayRow">
+      <Col id="rpItemOne" className="col-sm-4">
+   
+        <Col className="col-10" id="rpItemTwo">
+          <Row id="ratingBox">
+            <Col className="col-12" id="star">
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
               <span className="material-icons">star</span>
               <span className="material-icons">star_half</span>
-            </div>
+            </Col>
 
-            <div id="commentText">
-              <b>4.7</b> customer satisfaction
-            </div>
-          </div>
+            <Col className="col-12" id="commentText">
+              <b>4.7 </b>customer satisfaction
+            </Col>
+          </Row>
           <div id="triangle"></div>
-          <div id="usersImgCol">
+          <Row id="usersImgCol">
             <img id="usersImg" src={usersImg} alt="users"></img>
-          </div>
-        </div>
-      </div>
+          </Row>
+        </Col>
+      </Col>
 
-      <div id="rpItemThree">
-        <div id="rpTitle">Lorem ipsum dolor sit amet</div>
+      <Col id="rpItemThree" className="col-12 col-sm-8" >
+        <Row>
+        <Col className="col-12" id="rpTitle">Lorem ipsum dolor sit amet</Col>
 
-        <div id="rpCaption">
+        <Col className="col-12" id="rpCaption">
           Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
           quod ab, sunt iusto nihil incidunt cum eligendi
-        </div>
+        </Col>
 
-        <div id="logoImgCol">
-          <div id="logoFirstCol">
+        <Row id="logoImgCol">
+          <Col className="col-xs-12" md={4} className="logoCols">
             <img id="allLogo" src={allLogo} alt="Allianz"></img>
-          </div>
-          <div id="logoSecondCol">
+          </Col>
+          <Col className="col-xs-12" md={4}  className="logoCols">
             <img id="msLogo" src={msLogo} alt="Microsoft Logo"></img>
-          </div>
-          <div id="logoThirdCol">
-            <img id="bmwLogo" src={bmwLogo} alt="Allianz"></img>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div id="readMoreBtn">
+          </Col>
+          <Col className="col-xs-12" md={4} className="logoCols">
+            <img id="bmwLogo" src={bmwLogo} alt="BMW"></img>
+          </Col>
+        </Row>
+        </Row>
+      </Col>
+      </Row>
+      <Row className="appBtn" id="readMoreBtn">
         <BlockButton text={text} />
-      </div>
-    </div>
+      </Row>
+    </Container>
+
+      </>
+    // </Container>
   );
 };

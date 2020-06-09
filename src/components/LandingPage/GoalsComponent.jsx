@@ -1,54 +1,62 @@
 import React from "react";
 import BlockButton from "../BlockButton/BlockButton";
+import { Row, Col, Image } from "react-bootstrap";
+import handshake from "../../assets/pics/handshake.png";
+import filter from "../../assets/pics/filter.png";
+import network from "../../assets/pics/network.png";
 
 export default () => {
-    let text = "Start  >";
-    
+  let text = "Start  >";
+
   return (
-    <div id="appGoals">
-    <div id="goalTitle">Lorem ipsum dolor sit amet</div>
+    <>
+      <Row className="justify-content-center">
+        <GoalTitle></GoalTitle>
+        <GoalCaption></GoalCaption>
+      </Row>
+      <Row className="col-md-12 goalRow">
+        <Feature
+          icon={filter}
+          description="Lorem ipsum dolor sit amet"
+        ></Feature>
+        <Feature
+          icon={network}
+          description="Sed do aiusmod tempor incidunt"
+        ></Feature>
+        <Feature
+          icon={handshake}
+          description="Ut labore et dolore magna aliqua"
+        ></Feature>
+      </Row>
+      <Row className="appBtn" id="startBtn">
+        <BlockButton text={text} />
+      </Row>
+    </>
+  );
+};
 
-    <div id="goalCaption">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
-      quod ab, sunt iusto nihil incidunt cum eligendi
-    </div>
+const GoalTitle = (props) => {
+  return (
+    <Col md={12} className="headerTitle">
+      Lorem ipsum dolor sit amet
+    </Col>
+  );
+};
 
-    <div id="goalDepiction">
-      <div className="depictionCols">
-        <img
-          className="depictionImg"
-          src={require("../../assets/pics/filter.png")}
-          alt="filter requirements"
-        ></img>
-        <div className="depictionText">
-          Necessitatibus esse recusandae itaque assumenda
-        </div>
-      </div>
+const GoalCaption = (props) => {
+  return (
+    <Col md={12} className="captionTitle">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, aspernatur quod
+      ab sunt iusto nihil incidunt
+    </Col>
+  );
+};
 
-      <div className="depictionCols">
-        <img
-          className="depictionImg"
-          src={require("../../assets/pics/network.png")}
-          alt="networking"
-        ></img>
-        <div className="depictionText">Lorem ipsum dolor sit amet</div>
-      </div>
-
-      <div className="depictionCols">
-        <img
-          className="depictionImg"
-          src={require("../../assets/pics/handshake.png")}
-          alt="partners"
-        ></img>
-        <div className="depictionText">
-          Ipsum aperiam quisquam odit temporibus
-        </div>
-      </div>
-    </div>
-
-    <div id="appGoalsBtn">
-     <BlockButton text={text} />
-    </div>
-  </div>
+const Feature = (props) => {
+  return (
+    <Col className="feature" sm={12} md={3}>
+      <Image src={props.icon} rounded fluid className="mb-5" />
+      <p>{props.description}</p>
+    </Col>
   );
 };
