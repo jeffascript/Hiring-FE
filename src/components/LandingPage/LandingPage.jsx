@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 
 export default () => {
     return (
-      <Container fluid >
+      <Container fluid style={{overflowX: "hidden"}} >
       <Banner />
       <GoalsComponent />
       <RatingPartnersComponent />

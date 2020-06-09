@@ -38,11 +38,11 @@ export default () => {
 
       <Col id="rpItemThree" className="col-12 col-sm-8" >
         <Row>
-        <Col className="col-12" id="rpTitle">Lorem ipsum dolor sit amet</Col>
+        <Col className="col-12" id="rpTitle"><p>Lorem ipsum dolor sit amet</p></Col>
 
         <Col className="col-12" id="rpCaption">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
-          quod ab, sunt iusto nihil incidunt cum eligendi
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur
+          quod ab, sunt iusto nihil incidunt cum eligendi</p>
         </Col>
 
         <Row id="logoImgCol">

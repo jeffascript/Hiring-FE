@@ -1,6 +1,6 @@
 import React from "react";
 import BlockButton from "../BlockButton/BlockButton";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Container } from "react-bootstrap";
 import handshake from "../../assets/pics/handshake.png";
 import filter from "../../assets/pics/filter.png";
 import network from "../../assets/pics/network.png";
@@ -14,22 +14,25 @@ export default () => {
         <GoalTitle></GoalTitle>
         <GoalCaption></GoalCaption>
       </Row>
-      <Row className="col-md-12 goalRow">
-        <Feature
-          icon={filter}
-          description="Lorem ipsum dolor sit amet"
-        ></Feature>
-        <Feature
-          icon={network}
-          description="Sed do aiusmod tempor incidunt"
-        ></Feature>
-        <Feature
-          icon={handshake}
-          description="Ut labore et dolore magna aliqua"
-        ></Feature>
-      </Row>
+      <Container>
+        <Row >
+          <Feature
+            icon={filter}
+            description="Lorem ipsum dolor sit amet"
+          ></Feature>
+          <Feature
+            icon={network}
+            description="Sed do aiusmod tempor incidunt"
+          ></Feature>
+          <Feature
+            icon={handshake}
+            description="Ut labore et dolore magna aliqua"
+          ></Feature>
+        </Row>
+      </Container>
+
       <Row className="appBtn" id="startBtn">
-        <BlockButton text={text} />
+        <BlockButton text={text} style={{ margin: "auto" }} />
       </Row>
     </>
   );
@@ -54,7 +57,7 @@ const GoalCaption = (props) => {
 
 const Feature = (props) => {
   return (
-    <Col className="feature" sm={12} md={3}>
+    <Col className="feature" sm={12} md={3} lg={3}>
       <Image src={props.icon} rounded fluid className="mb-5" />
       <p>{props.description}</p>
     </Col>
