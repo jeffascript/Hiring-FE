@@ -3,19 +3,10 @@
 @import '../components/Banner/banner';
 @import '../components/Banner/bannerVariables';
 @import '../components/LandingPage/landingPage';
-@import '../components/LandingPage/landingPageVariables';
 @import '../components/BlockButton/button';
+@import '../components/LandingPage/ratingPartners';
+@import '../components/LandingPage/faqs';
+@import '../components/Footer/footer';
 
-body {
-  display: flex;
-  height: relative;
-
-  #root {
-    display: flex;
-    overflow: hidden;
-    flex: 1;
-    width: 100%;
-  }
-}
 
 

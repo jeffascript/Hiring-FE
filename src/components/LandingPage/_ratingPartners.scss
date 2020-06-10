@@ -1,0 +1,140 @@
+#ratingPartnersCont {
+  position: relative;
+
+  #overlayRow {
+    background: $secondaryBgColor;
+   
+ 
+    #rpItemOne {
+      // flex: 1 1;
+      display: flex;
+      height: fit-content;
+      padding-bottom: 1%;
+      position: relative;
+      @media screen and (max-width: 500px) {
+        display: none;
+       }
+      #rpItemTwo {
+        top: 20px;
+        right: -10px;
+        z-index: 3;
+        position: absolute;
+     
+
+        #ratingBox {
+          background: $primaryBgColor;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border-radius: 5px;
+          justify-content: center;
+          padding: 3% 0 5% 0;
+
+          #star {
+            text-align: center;
+
+            span {
+              color: $primaryTextColorYellow;
+              font-size: 40px;
+            }
+          }
+
+          #commentText {
+            @include genericText();
+            font-size: 0.95vh;
+            letter-spacing: 0px;
+
+          }
+        }
+      }
+
+      #triangle {
+        border-top: 1em solid white;
+        border-left: 1em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-right: 1em solid transparent;
+        width: 0px;
+        margin: auto;
+        margin-top: -2px;
+
+        @media screen and (max-width: 500px) {
+          border-top: 0.7em solid white;
+          border-left: 0.7em solid transparent;
+          border-bottom: 0.7em solid transparent;
+          border-right: 0.7em solid transparent;
+          margin-top: -2px;
+        }
+      }
+
+      #usersImgCol {
+        text-align: center;
+        padding-top: 4%;
+
+        #usersImg {
+          min-width: 50px;
+          min-height: 50px;
+          margin: 0 auto;
+          width: 7vw;
+        }
+      }
+    }
+  }
+
+  #rpItemThree {
+    background-image: linear-gradient($tertiaryBgColor, #fafafa);
+    padding: 4% 4% 2% 4%;
+
+    #rpTitle {
+      @include titleText();
+      min-width: 290px;
+      text-align: unset;
+    }
+
+    #rpCaption {
+      @include captionText();
+      text-align: unset;
+    }
+
+    #logoImgCol {
+      flex-wrap: wrap;
+
+      .logoCols {
+        display: inline-block;
+        padding: 4% 4% 3% 0;
+      }
+
+      #allLogo {
+        height: 3.5vh;
+        width: auto;
+        filter: drop-shadow(3px 3px 3px grey);
+      }
+
+      #msLogo {
+        flex: 1;
+        height: 3.5vh;
+        width: auto;
+        filter: drop-shadow(3px 3px 3px grey);
+      }
+
+      #bmwLogo {
+        height: 3.5vh;
+        width: auto;
+        margin-top: 0%;
+        filter: drop-shadow(3px 3px 3px grey);
+      }
+    }
+  }
+}
+#readMoreBtn {
+  position: absolute;
+  bottom: 1.5em;
+  background: transparent;
+
+  .site-button-ghost-wrapper {
+    .ant-btn-background-ghost {
+      margin: auto;
+      color: $primaryTextColorYellow;
+      background: $secondaryBgColor !important;
+    }
+  }
+}
+
