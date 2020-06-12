@@ -4,6 +4,7 @@
 @import '../components/Banner/bannerVariables';
 @import '../components/Banner/displayModal';
 @import '../components/CardComponent/displayCard';
+@import '../components//Header/header';
 @import '../components/LandingPage/landingPage';
 @import '../components/LandingPage/landingPageVariables';
 @import '../components/BlockButton/button';
@@ -13,9 +14,9 @@ body {
   height: relative;
 
   #root {
-    display: flex;
-    overflow: hidden;
-    flex: 1;
+    // display: flex;
+    // overflow: hidden;
+    // flex: 1;
     width: 100%;
   }
 }
