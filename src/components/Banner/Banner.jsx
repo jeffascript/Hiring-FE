@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BlockButton from "../BlockButton/BlockButton";
 import DisplayModal from "./DisplayModal";
 import LoginIcon from "../../assets/icons/User.png";
+import logo from "../../assets/pics/recruitask.png"
 export default () => {
   let text = "Get Started";
   const [visibleModal, setVisibleModal] = useState(false);
@@ -11,7 +12,7 @@ export default () => {
       <div id="logoRow">
         <div id="logo">
           <img
-            src={require("../../assets/pics/recruitask.png")}
+            src={logo}
             alt="logo"
           ></img>
         </div>
