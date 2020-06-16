@@ -24,7 +24,8 @@ export default () => {
       </div>
 
       <div id="mottoRow">
-        <div id="motto">The first task-based hiring platform</div>
+        <div id="motto">HIHIHIThe first task-based hiring platform</div>
+        <div id="motto">HIHIHIThe first task-based hiring platform</div>
         <div id="mottoCaption">
           We propose real anonymized tasks of companies from all over the world.
           Train yourself, nail the challenge and get hired.
