@@ -1,5 +1,5 @@
-@import "./functions.scss";
-@import "./variables.scss";
+@import './variables';
+@import './functions';
 @import '../components/Banner/banner';
 @import '../components/Banner/bannerVariables';
 @import '../components/Banner/displayModal';
@@ -7,6 +7,7 @@
 @import '../components/LandingPage/landingPage';
 @import '../components/LandingPage/landingPageVariables';
 @import '../components/BlockButton/button';
+@import '../components/TasksListPage/jumbotronTaskList';
 
 body {
   display: flex;

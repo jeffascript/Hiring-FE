@@ -1,73 +1,55 @@
 @import "../Banner/bannerVariables";
 
-#jumbo {
+.jumbo {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url($backgroundImg) top center no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   text-align: center;
   padding-bottom: 20px;
 
-  @media screen and (max-width: 400px) {
-    height: 15em;
-  }
-  @media screen and (min-width: 401px) and (max-width: 767px) {
-    height: 22em;
-  }
 
-  @media screen and (min-width: 769px) and (max-width: 999px) {
-    height: 30em;
-  }
-
-  @media screen and (min-width: 1000px) {
-    height: 35em;
-  }
-
-  @media screen and (min-width: 1300px) {
-    height: 40em;
-  }
-
-  @media screen and (min-width: 1420px) {
-    height: 45em;
-  }
-
-  @media screen and (min-width: 1536px) {
-    height: 50em;
-  }
-
-  #logoRow {
+  .logoRow {
     display: flex;
     border-bottom: 1px solid rgb(117, 99, 99);
-    width: 90%;
-    margin: auto;
+    width: 100%;
     margin-top: unset;
 
-    #logo {
+    .logo {
       position: relative;
       width: 30%;
       display: flex;
-      padding-left: 40px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding:16px;
       max-width: 270px;
+      margin-left: 20px;
 
       img {
-        height: 100%;
-        width: 100%;
+        height: 45px;
+        width: auto;
+        @media screen and (max-width: 767px) {
+          height: 25px;
+          width: auto;
+        }
       }
     }
   }
 
-  #btnLoginRow {
+  .btnLoginRow {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    padding:16px;
+    margin-right: 20px;
 
-    .btnLogin {
-      height: 70px;
-      width: 70px;
-      padding: 16px;  
+    img {
+      height: 45px;
+        width: auto; 
+        @media screen and (max-width: 767px) {
+          height: 25px;
+          width: auto;
+        }
     }
 
     .close {
@@ -100,12 +82,12 @@
     }
   }
 
-  #mottoRow {
+  .mottoRow {
     height: 70%;
     display: flex;
     flex-direction: column;
 
-    #motto {
+    .motto {
       @include jumboText();
       padding-top: 20px;
       padding-bottom: 0px;
@@ -115,19 +97,23 @@
       margin: auto;
       margin-bottom: 10px;
       margin-top: unset;
-      @media screen and (min-width: 360px) and (max-width: 768px) {
-        min-width: 400px;
-      }
     }
 
-    #mottoCaption {
+    .mottoCaption {
       @include jumboText();
       letter-spacing: 2px;
       font-weight: unset;
-      font-size: 1.5vw;
+      font-size: 2.0vw;
       width: 60%;
       min-width: 290px;
       margin: 0 auto;
+      @media screen and (max-width: 767px) {
+        font-size: 2.5vw;
+        // font-weight: bolder;
+      }
+      @media screen and (max-width: 440px) {
+        font-weight: bolder;
+      }
     }
   }
 }
