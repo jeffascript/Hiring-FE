@@ -1,15 +1,18 @@
 import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import loginReducer from "../reducers/login.js";
+import taskReducer from "../reducers/tasks.js";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const initialState={
-    loggedInUser: {}
+    loggedInUser: {},
+    tasks:{}
 };
 
 const combReducer=combineReducers({
-   loggedInUser: loginReducer
+   loggedInUser: loginReducer,
+   tasks:taskReducer
 });
 
 export default function configureStore() {

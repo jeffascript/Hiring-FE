@@ -1,3 +1,87 @@
-.divCard{
-    padding:4em;
+.col-md-4 {
+  padding: 3em;
+}
+
+.lblDoing {
+  margin: 0.3em 0 0 1em;
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+.lblDone {
+  margin: 0.3em 0 0 1em;
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+.divCard {
+  //   padding: 4em;
+
+  .ant-card-bordered {
+    border: none !important;
+
+    border-radius: 1em !important;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .status-false {
+    border-left: 10px solid lightgray !important;
+  }
+
+  .status-true {
+    border-left: 10px solid #1ed500 !important;
+  }
+
+  #imgLocation{
+      width: 9%;
+      height: 5%;
+  }
+
+  .btnLanguage {
+    border: 2px solid #f0f0f0;
+    margin: 0.1em 0.2em 0 0;
+    background-color: white;
+    color: $primaryTextColor;
+    border-color: #e7e7e7;
+    border-radius: 0.5em;
+  }
+
+  .displayStatus {
+    font-weight: bolder;
+    color: #1ed500;
+  }
+
+  .ant-card-head {
+    border: none !important;
+    color: $primaryTextColor;
+  }
+
+  .ant-card-body {
+    // padding: 0 !important;
+    // padding-left: 10px;
+    padding: 0em 24px !important;
+    color: $primaryTextColor;
+  }
+
+  .ant-card-head-title {
+    font-weight: bolder;
+  }
+
+  .displayLang {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .type {
+    display: block;
+    padding-left: 0.5em;
+  }
+
+  hr {
+    margin-right: 140px;
+  }
+
+  p {
+    padding: 0;
+  }
 }

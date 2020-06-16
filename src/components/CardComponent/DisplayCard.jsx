@@ -1,13 +1,28 @@
 import React from 'react';
-import { Card } from 'antd';
+import { useSelector } from 'react-redux'
+import CardList from "../CardComponent/CardList";
 
 export default function DisplayCard(props) {
+
+    const state = useSelector(state => state)
+    const { userInfo } = state.loggedInUser;
+
     return (
-        <div className="divCard">
-        <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
-            <p>Card content</p>
-           
-        </Card>
-        </div>
-    );
+        <>
+            <label className="lblDoing">Doing</label>
+            <div className="row"  >
+                {userInfo && userInfo.selectedTasks.filter(t => !t.isTaskCompleted).map((task, id) => (
+                    <CardList titleColor="status-true" tasks={task.taskId} status="Doing" key={id} />
+                ))
+                }
+            </div>
+            <label className="lblDoing">Done</label>
+            <div className="row"  >
+                {userInfo && userInfo.selectedTasks.filter(t => t.isTaskCompleted).map((task, id) => (
+                    <CardList titleColor="status-false" tasks={task.taskId} status="Done" key={id} />
+                ))
+                }
+            </div>
+        </>
+    )
 }
