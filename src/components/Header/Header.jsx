@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'reactstrap'
 import headerLogo from "../../assets/pics/recruitask.png"
 
 export default function Header(props) {
@@ -11,7 +12,8 @@ export default function Header(props) {
                 </div>
                 <div className="col">
                 </div>
-                <div className="col">
+                <div className="col d-flex justify-content-end mr-4 mt-3">
+                    <Button onClick={props.open}>Edit your profile</Button>
                 </div>
             </div>
             <div className="row" >
