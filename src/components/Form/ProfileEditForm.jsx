@@ -59,12 +59,12 @@ const ProfileEditForm = ({ initialValue, close, updateUser,visible }) => {
                     onCancel={close}
                     animation={false}
                 >
-                    <Form >
-                        <Input type={'text'} label={'Username'} name={'username'} value={username} onChange={(e) => setUsername(e.target.value)} />
-                        <Input type={'text'} label={'Firstname'} name={'firstname'} value={firstname} onChange={(e) => setFirstname(e.target.value)} />
-                        <Input type={'text'} label={'Surname'} name={'surname'} value={surname} onChange={(e) => setSurname(e.target.value)} />
+                    <Form className="text-left" >
+                        <Input  label={'Username'} name={'username'} value={username} onChange={(e) => setUsername(e.target.value)} />
+                        <Input  label={'Firstname'} name={'firstname'} value={firstname} onChange={(e) => setFirstname(e.target.value)} />
+                        <Input label={'Surname'} name={'surname'} value={surname} onChange={(e) => setSurname(e.target.value)} />
                         <Input type={'email'} label={'Email'} name={'email'} value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <Input type={'text'} label={'Location'} name={'location'} value={location} onChange={(e) => setLocation(e.target.value)} />
+                        <Input  label={'Location'} name={'location'} value={location} onChange={(e) => setLocation(e.target.value)} />
                         <Input type={'url'} label={'Github link'} name={'github'} value={github} onChange={(e) => setGithub(e.target.value)} />
                         <Input type={'url'} label={'Linkedin link'} name={'linkedin'} value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
                         <Button onClick={handleSubmit}>Update</Button>

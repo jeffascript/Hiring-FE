@@ -1,7 +1,7 @@
 import React from 'react'
 import { FormGroup, Label, Input } from 'reactstrap';
 
-const InputGroup = ({name,type, onChange,value,label}) => {
+const InputGroup = ({ name, type='text', onChange, value, label }) => {
     return (
         <>
             <FormGroup>
