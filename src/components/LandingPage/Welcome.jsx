@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { getUserDataByToken } from "../../actions/index.js";
+
 import { useSelector, useDispatch } from 'react-redux'
 import DisplayCard from '../../components/CardComponent/DisplayCard';
 import Header from "../Header/Header.jsx";
@@ -11,6 +12,7 @@ const Welcome = () => {
 
     useEffect(() => {
         const token = localStorage.token
+
         dispatch(getUserDataByToken(token));
     }, []);
 
@@ -23,6 +25,7 @@ const Welcome = () => {
                         <DisplayCard />
                     </div>
                 </>
+
             }
         </>
     )
