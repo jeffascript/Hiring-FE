@@ -449,7 +449,7 @@ div.tasksfilter.row {
   text-align: center;
 }
 
-div.tasksfilter div:first-of-type {
+.tasksfilter:first-of-type {
   padding-left: 0px;
   margin-right: 30px;
 }
