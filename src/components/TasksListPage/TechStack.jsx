@@ -14,7 +14,7 @@ export default () => {
 
 
     return (
-      <Col className="col-4 col-md-3">
+      <Col className="col-4 col-md-3 pl-2 mr-4">
         <ButtonDropdown className="dropdownButton" isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret>
         All tech stacks
