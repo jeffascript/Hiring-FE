@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Row, Container, Col } from "reactstrap";
 
 class Accordian extends Component {
   state = {
@@ -16,7 +17,16 @@ class Accordian extends Component {
 
     const opened = this.state.opened;
 
-    return (
+    return (<>
+
+
+   <Row className="m-5">
+     <Col>
+     <Container className="text-center">
+       <h3 className="headerTitle"> FAQ</h3>
+     </Container>
+     </Col>
+   </Row>
       <div
         {...{
           className: `accordion-item, ${opened && "accordion-item--opened"}`,
@@ -52,7 +62,7 @@ class Accordian extends Component {
           </ul>
         </div>
       </div>
-    );
+    </>);
   }
 }
 

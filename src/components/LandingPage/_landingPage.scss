@@ -2,15 +2,19 @@
   @include titleText();
   padding-top: 5%;
   padding-bottom: 1%;
+  font-weight: bold;
   @media screen and (max-width: 400px) {
     font-size: 4vw;
   }
 }
 
 .captionTitle {
+  font-size: calc(1.5px + 1.1vw);//added
+    font-weight: bold;//added
   @include captionText();
   @media screen and (max-width: 400px) {
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: bold;
   }
 }
 
@@ -22,9 +26,13 @@
 
 
   .feature {
-    text-align: center;
-    display: inline-block;
-    padding: 5% 0 3% 0;
+    text-align: center !important;
+    // display: inline-block;
+    display: flex !important;
+    padding: 10% 0 10% 0;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 
 
     img {

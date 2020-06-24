@@ -1,17 +1,15 @@
-.appBtn{
- justify-content: center;
+.appBtn {
+  justify-content: center;
 
-
-.site-button-ghost-wrapper {
+  .site-button-ghost-wrapper {
     display: flex;
     // padding-top: 20px;
     text-align: center;
+    //added
     // justify-content: center;
     // width:20vh;
     // flex: 2 2 20em;
     // width: 20vh !important;
-
-
 
     // @media screen and (min-width: 1000px){
     //  padding-top: 50px;
@@ -22,20 +20,29 @@
       color: $primaryTextColorYellow;
       background: transparent !important;
       border-color: $primaryTextColorYellow;
-      border-radius: 30px;
+      border-radius: 70px;
       font-size: 0.8em;
 
- 
+      box-sizing: border-box !important; //added
+      font-size: 0.79em !important; //added
+      line-height: 0em !important; //added
+      text-align: center !important; //added
+      text-transform: uppercase !important; //added
+      width: 38vmin !important; //added
+      height: 8vmin !important; //added
+      border: 2px solid #ffce06 !important; //added
     }
 
     .ant-btn {
       margin-top: 0px;
       height: 35px;
       width: 150px;
+      font-weight: bold;
+      font-size: calc(0.2em + 1.1vw )!important;
       // width: 20vh !important;
       // flex: 1 1;
       // flex: 1 2 1 auto;
-      
+
       // min-width: 90px;
 
       // @media screen and (min-width: 0px) and (max-width: 360px) {
@@ -62,7 +69,6 @@
       //   height: 50px !important;
       //   font-size: 1.5em;
       // }
-
     }
   }
 }
