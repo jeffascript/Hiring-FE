@@ -1,18 +1,40 @@
-//@import './variables';
 
 @mixin jumboText(){
   font-family: $primaryTextFont;
-  color: white;
+  color: $primaryBgColor;
   font-weight: bolder;
-  line-height: 1.2;
-  letter-spacing: 5px;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-size: 5vw;
 }
 
 
-@mixin goalsText(){
+@mixin genericText(){
   text-align: center;
   font-family: $primaryTextFont;
   color: $primaryTextColor;
   font-weight: bolder;
   line-height: 1.2;
+  font-size: 1.3vw;
+  letter-spacing: 2px;
+}
+
+@mixin titleText(){
+  text-align: center;
+  font-family: $primaryTextFont;
+  color: $primaryTextColor;
+  font-weight: bolder;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 3vw;
+}
+
+@mixin captionText(){
+  text-align: center;
+  font-family: $primaryTextFont;
+  color: $primaryTextColor;
+  font-weight: bolder;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 1.5vw
 }
