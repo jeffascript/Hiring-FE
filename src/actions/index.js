@@ -59,7 +59,6 @@ export const approveSelectedTasks = (token, taskId) => {
     );
     if (apiResp.ok) {
       const respJson = await apiResp.json();
-      console.log(respJson, "resp");
       dispatch({
         type: "APPROVE_TASK",
         payload: respJson.selectedTask,
@@ -69,7 +68,6 @@ export const approveSelectedTasks = (token, taskId) => {
         payload: "Task has been approved",
       });
     } else {
-      console.log(apiResp);
       dispatch({
         type: "MESSAGE",
         payload: "no msg",
@@ -79,7 +77,6 @@ export const approveSelectedTasks = (token, taskId) => {
 };
 
 export const deleteSelectedTasks = (token, taskId) => {
-  console.log(token, taskId);
   return async (dispatch, getState) => {
     const apiResp = await fetch(
       process.env.REACT_APP_URL + "/api/task/admin/task/" + taskId,
@@ -94,7 +91,6 @@ export const deleteSelectedTasks = (token, taskId) => {
     );
     if (apiResp.ok) {
       const respJson = await apiResp.json();
-      console.log(respJson, "resp");
       dispatch({
         type: "DELETE_TASK",
         payload: respJson._id,
@@ -104,7 +100,6 @@ export const deleteSelectedTasks = (token, taskId) => {
         payload: "Task has been deleted",
       });
     } else {
-      console.log(apiResp);
       dispatch({
         type: "MESSAGE",
         payload: "false",

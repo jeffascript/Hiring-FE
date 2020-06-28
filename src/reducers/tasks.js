@@ -3,7 +3,6 @@ export default function (state = {}, action) {
     case "GET_All_TASKS":
       return action.payload;
     case "APPROVE_TASK":
-      console.log(action,"action")
       // take the index of the approved 1
       // [1 , 3, 5, 6, 7, 8]
 
@@ -13,9 +12,13 @@ export default function (state = {}, action) {
 
       //const index = state.map(x => x._id).indexOf(action.payload._id)
       const index = state.findIndex((x) => x._id === action.payload._id);
-      return  [...state.slice(0, index),action.payload, ...state.slice(index + 1)]  
+      return [
+        ...state.slice(0, index),
+        action.payload,
+        ...state.slice(index + 1),
+      ];
     case "DELETE_TASK":
-      return state.filter((task) => task._id !== action.payload);  
+      return state.filter((task) => task._id !== action.payload);
     default:
       return state;
   }

@@ -8,7 +8,6 @@ export default function DisplayCard(props) {
     //console.log(React.version)
     const state = useSelector(state => state)
     const { userInfo } = state.loggedInUser;
-    console.log(state, "sttttt")
     const [cardId, setCardId] = useState([]);
 
     const setCardsId = useCallback((taskId) => {
