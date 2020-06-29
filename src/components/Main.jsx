@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import LandingPage from "../components/LandingPage/LandingPage";
 import CallBackPage from "../components/CallBack/CallBack";
 import WelcomePage from './LandingPage/Welcome';
 
 class Main extends Component {
+
     state = {  }
     render() { 
         return ( 
@@ -15,6 +16,7 @@ class Main extends Component {
         </Router>
         );
     }
+
 }
- 
+
 export default Main;
