@@ -32,9 +32,18 @@
     border-left: 10px solid #1ed500 !important;
   }
 
-  #imgLocation{
-      width: 9%;
-      height: 5%;
+  .status-admin-approve {
+    border-left: 10px solid #ffff00 !important;
+  }
+
+  .status-admin-notapproved {
+    border-left: 10px solid crimson !important;
+  }
+
+  
+  #imgLocation {
+    width: 9%;
+    height: 5%;
   }
 
   .btnLanguage {
@@ -85,3 +94,4 @@
     padding: 0;
   }
 }
+

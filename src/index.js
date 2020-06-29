@@ -14,9 +14,13 @@ import configureStore from "./store";
 
 ReactDOM.render(
   <Provider store={configureStore()}>
-    {/* <React.StrictMode> */}
-    <Main />
-    {/* </React.StrictMode> */}
+
+  {/* <React.StrictMode> */}
+
+    <Main/>
+  {/* </React.StrictMode> */}
+
+
   </Provider>,
   document.getElementById("root")
 );

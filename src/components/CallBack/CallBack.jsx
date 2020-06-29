@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router-dom';
+import Loader from 'react-loader-spinner'
 
 const CallBack = (props) => {
     const [isLoading, setLoading] = useState(false);
 
     useEffect(() => {
         const search = new URLSearchParams(props.location.search)
-        console.log(props,"searchs")
         const token = search.get("token");
         if (token) {
             localStorage.setItem("token", token);
@@ -15,7 +15,6 @@ const CallBack = (props) => {
             setLoading(true)            
             props.history.push("/welcome");
         }, 2000)
-        console.log(token, "serach");
     }, [props.location.search])
     return (
         <>
@@ -24,7 +23,15 @@ const CallBack = (props) => {
             <div> Loading</div>
         </> 
         :
-        <h5>jjjjj</h5>
+        <Loader style={{padding:"200px", display:"flex", 
+        justifyContent:"center",alignItems:"center" }}
+        type="Oval"
+        color="#00BFFF"
+        height={70}
+        width={70}
+        timeout={10000} //3 secs
+
+     />
         }        
         </>
     )
