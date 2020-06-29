@@ -40,7 +40,7 @@ const Welcome = () => {
             {state.loggedInUser &&
                 <>
                     <div style={{ overflowX: "hidden" }} >
-                        <Header userName={state.loggedInUser.username} open={changeOpenEditForm} />
+                        <Header userName={ state.loggedInUser.username} open={changeOpenEditForm} />
                         <DisplayCard />
                         {currentUser && <ProfileEditForm initialValue={currentUser} close={changeOpenEditForm} updateUser={updateCurrentUser} visible={openEditForm} />}
                     </div>
