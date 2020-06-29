@@ -1,0 +1,38 @@
+[0611/234213.594:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.599:ERROR:exception_snapshot_win.cc(98)] thread ID 13928 not found in process
+[0611/234213.631:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.631:ERROR:exception_snapshot_win.cc(98)] thread ID 10560 not found in process
+[0611/234213.645:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.647:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.647:ERROR:exception_snapshot_win.cc(98)] thread ID 14080 not found in process
+[0611/234213.662:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.663:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.663:ERROR:exception_snapshot_win.cc(98)] thread ID 14240 not found in process
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.762:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.762:ERROR:exception_snapshot_win.cc(98)] thread ID 14680 not found in process
+[0611/234213.768:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.768:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.768:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.768:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.768:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.768:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.768:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.768:ERROR:exception_snapshot_win.cc(98)] thread ID 3268 not found in process
+[0611/234213.787:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.787:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.787:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.787:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.787:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.787:ERROR:process_reader_win.cc(151)] SuspendThread: Accesso negato. (0x5)
+[0611/234213.787:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accesso negato} Un processo ha richiesto di accedere ad un oggetto ma non ha ottenuto i diritti di accesso. (0xc0000022)
+[0611/234213.787:ERROR:exception_snapshot_win.cc(98)] thread ID 13440 not found in process

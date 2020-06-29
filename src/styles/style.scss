@@ -1,13 +1,15 @@
 @import "./functions.scss";
 @import "./variables.scss";
-@import '../components/Banner/banner';
-@import '../components/Banner/bannerVariables';
-@import '../components/Banner/displayModal';
-@import '../components/CardComponent/displayCard';
-@import '../components//Header/header';
-@import '../components/LandingPage/landingPage';
-@import '../components/LandingPage/landingPageVariables';
-@import '../components/BlockButton/button';
+@import "../components/Banner/banner";
+@import "../components/Banner/bannerVariables";
+@import "../components/Banner/displayModal";
+@import "../components/CardComponent/displayCard";
+@import "../components//Header/header";
+@import "../components/LandingPage/landingPage";
+@import "../components/BlockButton/button";
+@import "../components/LandingPage/ratingPartners";
+@import "../components/LandingPage/faqs";
+@import "../components/Footer/footer";
 
 body {
   display: flex;
@@ -20,5 +22,3 @@ body {
     width: 100%;
   }
 }
-
-
