@@ -1,12 +1,24 @@
 @import "./functions.scss";
 @import "./variables.scss";
-@import '../components/Banner/banner';
-@import '../components/Banner/bannerVariables';
-@import '../components/LandingPage/landingPage';
-@import '../components/BlockButton/button';
-@import '../components/LandingPage/ratingPartners';
-@import '../components/LandingPage/faqs';
-@import '../components/Footer/footer';
+@import "../components/Banner/banner";
+@import "../components/Banner/bannerVariables";
+@import "../components/Banner/displayModal";
+@import "../components/CardComponent/displayCard";
+@import "../components//Header/header";
+@import "../components/LandingPage/landingPage";
+@import "../components/BlockButton/button";
+@import "../components/LandingPage/ratingPartners";
+@import "../components/LandingPage/faqs";
+@import "../components/Footer/footer";
 
+body {
+  display: flex;
+  height: relative;
 
-
+  #root {
+    // display: flex;
+    // overflow: hidden;
+    // flex: 1;
+    width: 100%;
+  }
+}

@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Container, Row, Col, Image } from "reactstrap";
 import BlockButton from "../BlockButton/BlockButton";
-
+import DisplayModal from "./DisplayModal";
+import LoginIcon from "../../assets/icons/User.png";
+import logo from "../../assets/pics/recruitask.png";
 export default () => {
   let text = "Get Started";
-
+  const [visibleModal, setVisibleModal] = useState(false);
+  const changeVisibility = () => setVisibleModal(!visibleModal);
   return (
     <Container fluid id="jumbo">
       <Row id="logoRow">
         <div id="logo">
-          <img
-            src={require("../../assets/pics/recruitask.png")}
-            alt="logo"
-          ></img>
+          <img src={logo} alt="logo"></img>
         </div>
       </Row>
 
@@ -22,11 +23,24 @@ export default () => {
           Train yourself, nail the challenge and get hired.
           </Row> */}
 
+      <div id="btnLoginRow">
+        <img
+          className="btnLogin"
+          src={LoginIcon}
+          onClick={changeVisibility}
+          alt="no"
+        />
+        <a href="#" className="close" />
+        {!!visibleModal && (
+          <DisplayModal show={visibleModal} SetVisibility={changeVisibility} />
+        )}
+      </div>
+
       <Container>
         <Row>
           <div className="col-12" id="motto">
             <Container>
-              <span> The first task-based hiring platform </span>
+              <span>The first task-based hiring platform</span>
             </Container>
           </div>
           <div className="col-12" id="mottoCaption">
